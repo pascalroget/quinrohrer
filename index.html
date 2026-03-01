@@ -483,6 +483,66 @@
             margin-top: 2px;
         }
 
+        /* Pulse animation for CTA */
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+            50% { box-shadow: 0 0 0 12px rgba(220, 38, 38, 0); }
+        }
+
+        /* Mid-page CTA banner */
+        .mid-cta {
+            background: var(--red-600);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .mid-cta h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .mid-cta p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mid-cta .cta-btn {
+            background: white;
+            color: var(--red-700);
+        }
+
+        .mid-cta .cta-btn:hover {
+            background: var(--gray-100);
+        }
+
+        /* Victim quotes */
+        .victim-quote {
+            padding: 24px;
+            background: var(--gray-50);
+            border-left: 4px solid var(--red-600);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+
+        .victim-quote blockquote {
+            font-size: 16px;
+            font-style: italic;
+            color: var(--gray-800);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .victim-quote .attribution {
+            font-size: 13px;
+            color: var(--gray-500);
+            font-weight: 600;
+        }
+
         /* Responsive */
         @media (max-width: 640px) {
             .case-card .meta {
@@ -513,6 +573,10 @@
             <p class="subtitle">Found liable for fraud, conversion, and theft by the U.S. District Court, Western District of Texas. Default judgment entered February 2024.</p>
             <div class="amount">$430,000+</div>
             <p class="amount-label">Documented losses from known victims</p>
+            <div style="margin-top: 40px;">
+                <a href="#report" class="cta-btn" style="font-size: 18px; padding: 18px 48px; display: inline-block; animation: pulse 2s infinite;">🚨 Report Fraud — Help Build the FBI Complaint</a>
+                <p style="color: var(--gray-400); font-size: 14px; margin-top: 12px;">Have you lost money to Quin Rohrer or his companies? Your report matters.</p>
+            </div>
         </div>
     </div>
 
@@ -641,6 +705,38 @@
                 <li><strong>Ignore</strong> — Does not respond to demand letters from attorneys or federal lawsuits.</li>
             </ol>
             <p>In some cases, Rohrer has operated through intermediary brokers, creating a chain where the middleman also becomes a victim when Rohrer disappears with the funds.</p>
+        </div>
+    </section>
+
+    <!-- Mid-page CTA -->
+    <div class="mid-cta">
+        <h3>Were You a Victim?</h3>
+        <p>We're building a coordinated FBI IC3 complaint. The more victims who come forward, the stronger the case. Your identity stays confidential.</p>
+        <a href="#report" class="cta-btn" style="font-size: 16px; padding: 14px 36px;">Submit a Victim Report →</a>
+    </div>
+
+    <!-- Victim Reports from Industry -->
+    <section>
+        <div class="container">
+            <h2>What Victims Are Saying</h2>
+            <p>In May 2025, solar industry professionals began publicly sharing their experiences with Quin Rohrer in the Facebook group <strong>"Solar Sales, Objections, and Markets"</strong>:</p>
+
+            <div class="victim-quote">
+                <blockquote>"Paid this man for a container in November. He ghosted me, changed his number. I am out 80k. [...] Goes by Quin Rohrer, Globus Enterprises and Renewable Enterprises out of Utah."</blockquote>
+                <div class="attribution">— Chase Mulleneaux, solar industry professional (May 7, 2025)</div>
+            </div>
+
+            <div class="victim-quote">
+                <blockquote>"He blatantly stole $250k from Kinect. Made up fake serial numbers and everything. He is a straight criminal."</blockquote>
+                <div class="attribution">— Lauren Carson, CEO of Kinect Solar (commenting on the above post)</div>
+            </div>
+
+            <div class="victim-quote">
+                <blockquote>"He has 94k of mine for 3 Weeks now"</blockquote>
+                <div class="attribution">— Gutie Aaron, solar equipment broker</div>
+            </div>
+
+            <p style="margin-top: 24px;">These reports align precisely with the pattern documented in the federal case — large payments for solar equipment, followed by excuses and silence. The fact that victims are surfacing independently in 2025, nearly two years after the federal lawsuit, suggests the scheme continued even after Rohrer was sued.</p>
         </div>
     </section>
 
@@ -840,6 +936,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Bottom CTA -->
+    <div class="mid-cta">
+        <h3>Help Stop This</h3>
+        <p>Every victim report strengthens the case. If you've lost money to Quin Rohrer, Globus Enterprises, Renewable Enterprises, or any associated entity — speak up.</p>
+        <a href="#report" class="cta-btn" style="font-size: 16px; padding: 14px 36px;">Submit a Victim Report →</a>
+    </div>
 
     <!-- Footer -->
     <footer>
